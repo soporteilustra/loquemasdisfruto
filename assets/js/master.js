@@ -77,6 +77,8 @@ function nextStep() {
   $('#input-'+this.stepQuiz).fadeOut(100);
   this.stepQuiz++;
   $('#input-'+this.stepQuiz).delay(300).fadeIn(500);
+  resetProgress();
+  $quiz.addClass('percent-'+this.stepQuiz);
 }
 
 function showSolution() {
@@ -107,4 +109,10 @@ $('#si').click(function() {
 $('#so').click(function() {
   $integracion.fadeOut(100);
   $online.delay(2500).fadeIn(500).css('display','flex').css('opacity','1');
+});
+
+
+$('#mainform').submit(function(e) {
+  e.preventDefault();
+  alert('Tus datos han sido enviados correctamente!');
 });
