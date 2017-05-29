@@ -149,12 +149,18 @@
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
 }
-#helping .profiles .profile-item:hover {
+#helping .profiles .profile-item:hover, #helping .profiles .profile-item.active {
   background: #fff;
 }
 #dinamic-form {
-  padding: 2em 2em 4em 2em;
+  padding: 2em;
   background: #003459;
+  height: 220px;
+  transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
 }
 #dinamic-form .content-dinamic-form {
   padding: 1em;
@@ -182,6 +188,11 @@
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 300;
   background: #4eb648;
+  transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
 }
 #dinamic-form .content-dinamic-form.percent-2::after {
   width: 50%;
@@ -214,6 +225,12 @@
   cursor: pointer;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
+  height: 80px;
+  transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
 }
 #dinamic-form .arrow i {
   font-size: 1.4em;
@@ -223,21 +240,11 @@
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 700;
-  margin-top: 1em;
   text-align: center;
   font-size: 2em;
 }
 #dinamic-form .text  i {
   margin-left: .5em;
-}
-#input-dinamic {
-  display: none;
-}
-#input-2 {
-  display: none;
-}
-#input-3 {
-  display: none;
 }
 #solutions {
   padding: 2em 4em;
@@ -254,8 +261,229 @@
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+#solutions .title2 {
+  color: #4eb648;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 3.5em;
+  margin-bottom: .9em;
+  padding-bottom: .07em;
+  text-transform: capitalize;
+  position: relative;
+}
+#solutions .title2::after {
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 40%;
+  height: 3px;
+  content: ' ';
+  background: #4eb648;
+  z-index: 0;
+}
+#solutions .title2::before {
+  position: absolute;
+  bottom: -17px;
+  left: 0;
+  width: 30px;
+  height: 25px;
+  content: '\f10a';
+  font-size: 28px;
+  text-align: left;
+  font-family: 'FontAwesome';
+  font-weight: 100;
+  background: #f2f3f5;
+  z-index: 1;
+}
+#solutions .title2.integracion::before {
+  content: '\f1c0';
+}
+#solutions .text {
+  color: #808285;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 1.1em;
+}
+#solutions .subtitle {
+  color: #4eb648;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 300;
+}
+#solutions .steps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 1em;
+  width: 100%;
+}
+#solutions .steps .step {
+  width: 200px;
+  padding: .5em;
+  text-align: center;
+}
+#solutions #integracion .steps .step {
+  width: 250px;
+}
+#solutions .steps .step img {
+  height: 55px;
+  width: auto;
+  margin-bottom: .5em;
+}
+#solutions .steps .step h5 {
+  color: #4eb648;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 400;
+  padding: .3em;
+  margin-bottom: .8em;
+  position: relative;
+}
+#solutions .steps .step h5::after {
+  content: ' ';
+  width: 60%;
+  height: 2px;
+  background: #4eb648;
+  position: absolute;
+  bottom: -4px;
+  left: 20%;
+}
+#solutions .steps .step p {
+  color: #808285;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 300;
+}
+.text-muted {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: .8em;
+  font-weight: 300;
+}
+#solutions .benefits {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+  color: #808285;
+  margin-top: 1.5em;
+}
+#solutions .benefits li {
+  list-style: none;
+  margin: .5em;
+  position: relative;
+}
+#solutions .benefits li::before {
+  content: ' ';
+  height: 25px;
+  width: 25px;
+  background-image: url(../media/listcheck.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  left: -40px;
+  top: 0;
+}
+#solutions .list-inline .list-inline-item {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 1.1em;
+  color: #808285;
+  margin: .2em .5em;
+}
 
+#alternative {
+  background: #fafafa;
+  border-radius: 8px;
+  margin-top: 2em;
+  color: #808285;
+}
+#alternative .calldown {
+  background: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#alternative .calldown h4 {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 400;
+  color: #424242;
+}
+#alternative .img {
+  padding: 0;
+}
+#alternative .desc {
+  padding: 1em;
+}
+#alternative .desc h2 {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 600;
+  margin: 0;
+  font-size: 2em;
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  color: #4eb648;
+  margin-bottom: .2em;
+}
+#alternative .desc p {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 100;
+  font-size: .9em;
+  margin: 0;
+  margin-bottom: .5em;
+}
+#alternative .desc a {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 300;
+  text-transform: lowercase;
+  background: #4eb648;
+  padding: .3em 1em;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
 
+#products {
+  padding: 2em 0em;
+}
+#products .title {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  color: #003459;
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+}
+#products .product-item {
+  height: 250px;
+  text-align: center;
+  padding: 2em 1em;
+}
+#products .product-item img {
+  display: block;
+  margin: auto;
+  height: 70px;
+  width: auto;
+  margin-bottom: .5em;
+}
+#products .product-item h4 {
+  display: block;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 400;
+}
+#products .product-item p {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 300;
+}
+
+#calldown {
+  padding: 2em;
+  background: #fff;
+}
+#calldown h1 {
+  color: #4eb648;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 2.5em;
+}
+#calldown h1 img {
+ height: 80px;
+ width: auto;
+}
 
 #contact {
   padding:3em 2em;
@@ -310,10 +538,26 @@ form .btn-primary {
 form .btn-primary:hover {
   background: #003459;
 }
+#footer {
+  padding: 2em;
+  background: #f2f3f5;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  color: #808285;
+  border-top: 3px solid #fff;
+}
+#footer a, #footer a:hover, #footer a:focus, #footer a:active {
+  color: #4eb648;
+  font-weight: 400;
+}
+#footer .peru-brand {
+  border-left: 1px solid rgba(0, 0, 0, 0.5);
+}
 footer {
   background: #003459;
   padding: 2em;
-  border-top: 2px solid #fff;
+  border-top: 4px solid #fff;
 }
 footer h6 {
   color: #fff;
@@ -323,4 +567,36 @@ footer h6 {
 }
 footer h6 a, footer h6 a:hover, footer h6 a:active, footer h6 a:focus {
   color: orange;
+}
+
+
+#integracion {
+  display: none;
+  opacity: 0;
+  transition: all 1s ease-in;
+  -webkit-transition: all 1s ease-in;
+  -moz-transition: all 1s ease-in;
+  -ms-transition: all 1s ease-in;
+  -o-transition: all 1s ease-in;
+}
+#online {
+  display: none;
+  opacity: 0;
+  transition: all 1s ease-in;
+  -webkit-transition: all 1s ease-in;
+  -moz-transition: all 1s ease-in;
+  -ms-transition: all 1s ease-in;
+  -o-transition: all 1s ease-in;
+}
+#input-dinamic {
+  display: none;
+}
+#input-1 {
+  display: none;
+}
+#input-2 {
+  display: none;
+}
+#input-3 {
+  display: none;
 }
