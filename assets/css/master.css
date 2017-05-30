@@ -314,6 +314,9 @@
   font-weight: 300;
   font-size: 1.5em;
 }
+#solutions .subtitle i {
+  margin-right: .3em;
+}
 #solutions .steps {
   list-style: none;
   padding: 0;
@@ -330,7 +333,7 @@
   width: 250px;
 }
 #solutions #integracion .list-inline {
-  padding-left: 1.3em;
+  padding-left: 1.6em;
 }
 #solutions .steps .step img {
   height: 55px;
@@ -394,7 +397,18 @@
   color: #808285;
   margin: .2em .5em;
 }
-
+#integracion img.howork {
+  max-height: 350px;
+  width: auto;
+}
+#products .callnext h4 {
+  display: inline-block;
+  margin: auto;
+  background: #003459;
+  color: #fff;
+  padding: .5em 1.5em;
+  font-family: 'Fira Sans Condensed', sans-serif;
+}
 #alternative {
   background: #fafafa;
   border-radius: 8px;
@@ -456,7 +470,6 @@
   text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
 }
 #products .product-item {
-  height: 250px;
   text-align: center;
   padding: 2em 1em;
 }
