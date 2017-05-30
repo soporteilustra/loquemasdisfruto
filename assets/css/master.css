@@ -647,3 +647,80 @@ footer h6 a, footer h6 a:hover, footer h6 a:active, footer h6 a:focus {
 #thanks a, #thanks a:focus, #thanks a:hover, #thanks a:active {
   color: #4eb648;
 }
+body {
+  font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+/****& RESPONSIVE ****/
+@media (max-width: 1025px) {
+  #portrait {
+    height: 550px;
+  }
+  #portrait .advice .display-3 {
+    font-size: 3.4em;
+  }
+  #portrait .advice .lead {
+    font-size: 1.2em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  }
+  #featuring .feat h4 {
+    font-size: 1.2em;
+  }
+  #featuring .feat .text {
+    font-size: .9em;
+  }
+  #helping .desc h1 {
+    font-size: 2em;
+  }
+  #solutions .title-content {
+    margin-bottom: .5em !important;
+  }
+  #solutions .text, #solutions #integracion .list-inline-item {
+    font-size: 1em;
+  }
+  #solutions #integracion .list-inline-item img {
+    height: 50px;
+  }
+  #integracion .subtitle {
+    font-size: 1.3em;
+  }
+  #integracion .howork {
+    height: 300px;
+  }
+  #online .subtitle {
+    font-size: 1.5em;
+  }
+  #online .step , #online .benefits li {
+    font-size: .9em;
+  }
+  #products .title {
+    font-size: 2.2em;
+  }
+  #products .product-item img {
+    height: 50px;
+  }
+  #products .product-item h4 {
+    font-size: 1.2em;
+  }
+  #products .product-item p {
+    font-size: .9em;
+  }
+}
+
+@media (max-width: 769px) {
+  #portrait .bg-main:nth-child(1) {
+    background-position: center top;
+  }
+  #featuring .feat:nth-child(3) {
+    border-left: 0px solid rgba(255, 255, 255, 0.5);
+  }
+}
+@media (max-width: 426px) {
+  #featuring .feat {
+    border-left: 0px solid rgba(0, 0, 0, 0.5) !important;
+  }
+  #dinamic-form .arrow {
+    height: 40px;
+    margin-top: .4em;
+  }
+}

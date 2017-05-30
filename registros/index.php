@@ -10,26 +10,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="theme-color" content="#831414"/>
-  <title>SmartLiving | Registros</title>
-  <link rel="shorcut icon" href="assets/media/ico.png">
+  <meta name="theme-color" content="#4eb648"/>
+  <title>Lo que más disfruto | Registros</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
   <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/master.css">
 </head>
 <body>
 
-  <section id="logReport" class="bg-white">
+  <section id="logReport" style="height: 100vh; background: #003459;">
     <div class="container h-100">
       <div class="row justify-content-center h-100 align-items-center">
         <div class="col-12 col-md-7 col-lg-5 p-4">
           <div class="card text-center" id="card-log">
-            <div class="card-header bg-dark">
+            <div class="card-header bg-success">
               <!--<img class="img-fluid" src="../assets/media/ico.png" alt="">-->
-              <a href="#" class="branding">
-                <span>Smart</span><i class="icon ion-wifi"></i><span>living</span>
+              <a href="" class="branding text-white">
+                Efacturacion | Lo que más disfruto
               </a>
             </div>
             <div class="card-block">
@@ -67,8 +66,8 @@
                 </div>
               </form>
             </div>
-            <div class="card-footer text-center text bg-dark text-white" id="current-date">
-
+            <div class="card-footer text-center text bg-success text-white" id="current-date">
+                <?php date_default_timezone_set('UTC'); echo "Reporte al ".date('d-m-Y'); ?>
             </div>
           </div>
         </div>
@@ -80,6 +79,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-  <script src="../assets/js/main.js" charset="utf-8"></script>
+  <script src="../assets/js/master.js" charset="utf-8"></script>
 </body>
 </html>
