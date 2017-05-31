@@ -11,6 +11,7 @@ const jsonProfile = {
     'ruc': '',
     'email': '',
     'phone' : '',
+    'message': '',
   }
 }
 var stepQuiz = 0;
@@ -116,20 +117,21 @@ $('#so').click(function() {
 
 $('#mainform').submit(function(e) {
   e.preventDefault();
-  var band = false;
+  var cont = 0;
 
   $formInput.each(function () {
     var temp = $(this).attr('name');
-    if ( $.trim( $(this).val() ) == '') {
+    if ( $.trim( $(this).val() ) == '' && $(this).attr('required')) {
       alert('Llena los campos correctamente');
-      band = false;
+      console.log(cont);
     } else {
       jsonProfile['data'][temp] = $(this).val();
-      band = true;
+      cont++;
+      console.log(cont);
     }
   });
 
-  if (band) {
+  if (cont == 6) {
     $.ajax({
       url: $(this).attr('action'),
       method: 'POST',

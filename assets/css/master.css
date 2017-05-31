@@ -397,6 +397,18 @@
   color: #808285;
   margin: .2em .5em;
 }
+.lseparator {
+  position: relative;
+}
+.lseparator::after {
+  content: ' ';
+  width: 2px;
+  height: 110%;
+  background: #4eb648;
+  position: absolute;
+  left: -20px;
+  bottom: 0;
+}
 #integracion img.howork {
   max-height: 350px;
   width: auto;
