@@ -29,7 +29,7 @@
   animation-delay: 5s;
 }
 #portrait .bg-main:nth-child(3) {
-  background-image: url(../media/bgmain1.jpg);
+  background-image: url(../media/bgmain4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -735,4 +735,8 @@ body {
     height: 40px;
     margin-top: .4em;
   }
+}
+
+.brand-tci {
+  height: 80px;
 }
