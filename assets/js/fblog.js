@@ -42,9 +42,9 @@ function getData(id) {
 }
 
 function showDatainForm(response) {
-   alert(response.name);
+   //alert(response.name);
    document.getElementById("formname").value = response.name;
-   alert(response.email);
+   //alert(response.email);
    document.getElementById("formemail").value = response.email;
 }
 
